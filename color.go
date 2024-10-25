@@ -430,8 +430,8 @@ func (c *Color) format() string {
 }
 
 func (c *Color) unformat() string {
-	//return fmt.Sprintf("%s[%dm", escape, Reset)
-	//for each element in sequence let's use the specific reset escape, or the generic one if not found
+	// return fmt.Sprintf("%s[%dm", escape, Reset)
+	// for each element in sequence let's use the specific reset escape, or the generic one if not found
 	format := make([]string, len(c.params))
 	for i, v := range c.params {
 		format[i] = strconv.Itoa(int(Reset))
