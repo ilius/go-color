@@ -9,7 +9,6 @@ import (
 	"sync"
 
 	"github.com/ilius/go-colorable"
-	"github.com/mattn/go-isatty"
 )
 
 var (
@@ -19,8 +18,7 @@ var (
 	// set (regardless of its value). This is a global option and affects all
 	// colors. For more control over each color block use the methods
 	// DisableColor() individually.
-	NoColor = noColorIsSet() || os.Getenv("TERM") == "dumb" ||
-		(!isatty.IsTerminal(os.Stdout.Fd()) && !isatty.IsCygwinTerminal(os.Stdout.Fd()))
+	NoColor = noColorIsSet() || os.Getenv("TERM") == "dumb" || !outputIsTerminal(os.Stdout)
 
 	// Output defines the standard output of the print functions. By default,
 	// os.Stdout is used.
@@ -34,6 +32,12 @@ var (
 	colorsCache   = make(map[Attribute]*Color)
 	colorsCacheMu sync.Mutex // protects colorsCache
 )
+
+// check if standard output is connected to a terminal
+func outputIsTerminal(stdout *os.File) bool {
+	o, _ := stdout.Stat()
+	return (o.Mode() & os.ModeCharDevice) == os.ModeCharDevice
+}
 
 // noColorIsSet returns true if the environment variable NO_COLOR is set to a non-empty string.
 func noColorIsSet() bool {
