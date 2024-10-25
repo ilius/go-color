@@ -1,4 +1,4 @@
-module github.com/ilius/color
+module github.com/ilius/go-color
 
 go 1.17
 

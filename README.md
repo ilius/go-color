@@ -1,4 +1,4 @@
-# color [![](https://github.com/ilius/color/workflows/build/badge.svg)](https://github.com/ilius/color/actions) [![PkgGoDev](https://pkg.go.dev/badge/github.com/ilius/color)](https://pkg.go.dev/github.com/ilius/color)
+# color [![](https://github.com/ilius/go-color/workflows/build/badge.svg)](https://github.com/ilius/go-color/actions) [![PkgGoDev](https://pkg.go.dev/badge/github.com/ilius/go-color)](https://pkg.go.dev/github.com/ilius/go-color)
 
 Color lets you use colorized outputs in terms of [ANSI Escape
 Codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors) in Go (Golang). It
@@ -10,7 +10,7 @@ suits you.
 ## Install
 
 ```
-go get github.com/ilius/color
+go get github.com/ilius/go-color
 ```
 
 ## Examples
@@ -186,4 +186,4 @@ To output color in GitHub Actions (or other CI systems that support ANSI colors)
 
 ## License
 
-The MIT License (MIT) - see [`LICENSE.md`](https://github.com/ilius/color/blob/master/LICENSE.md) for more details
+The MIT License (MIT) - see [`LICENSE.md`](https://github.com/ilius/go-color/blob/master/LICENSE.md) for more details
