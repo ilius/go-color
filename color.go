@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mattn/go-colorable"
+	"github.com/ilius/go-colorable"
 	"github.com/mattn/go-isatty"
 )
 

@@ -182,7 +182,7 @@ To output color in GitHub Actions (or other CI systems that support ANSI colors)
 ## Credits
 
 * [Fatih Arslan](https://github.com/fatih)
-* Windows support via @mattn: [colorable](https://github.com/mattn/go-colorable)
+* Windows support via @mattn: [colorable](https://github.com/ilius/go-colorable)
 
 ## License
 
