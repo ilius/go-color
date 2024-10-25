@@ -1,5 +1,5 @@
-github.com/ilius/go-colorable v1.0.0 h1:wJyq05I2VOnPKoPl6sKsv3V3N8tSkNGQl5Z22ZuHTY0=
-github.com/ilius/go-colorable v1.0.0/go.mod h1:C+ica4o2vNsfE86XclwTF/+yxAC64YwmHwUwbvxMJjk=
+github.com/ilius/go-colorable v1.1.0 h1:IOovNya65d0Kru/oUTX8xZJL8SY3TK54ajLuAd5NUV0=
+github.com/ilius/go-colorable v1.1.0/go.mod h1:C+ica4o2vNsfE86XclwTF/+yxAC64YwmHwUwbvxMJjk=
 github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
